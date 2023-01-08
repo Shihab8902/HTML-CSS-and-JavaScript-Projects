@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save User Preferances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+                <!-- Project Heading -->
+    <h1 class="heading">Word Processing</h1>
+                <!-- Get user Preferances -->
+    <div class="userPreferances">
+                <!-- Font Size Selection -->
+        <label for="fontSize">Select Font Size: </label>
+            <select name="fontSize" id="fontSize">
+                <option value="11px">11px</option>
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+                <option value="20px">20px</option>
+                <option value="30px">30px</option>
+            </select>
+
+                <!-- Font Color Selection -->
+        <label for="fontColor">Select Font Color: </label>
+            <select name="fontColor" id="fontColor">
+                <option value="black">Black</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+            </select>
+
+                    <!-- Background Color Selection -->
+        <label for="bgColor">Select Background Color: </label>
+            <select name="bgColor" id="bgColor">
+                <option value="white">White</option>
+                <option value="yellowgreen">YellowGreen</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="magenta">Magenta</option>
+            </select><br>
+
+                        <!-- Reset to Default -->
+            <button id="resetButton">Reset</button>
+    </div>
+
+    <div class="textField">
+        <textarea name="textField" id="textField" cols="30" rows="10"></textarea>
+    </div>
+
+</div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Reset Code */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./Images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    display: flex;
+   justify-content: center;
+   height: 100vh;
+   align-items: center;
+}
+.card{
+    background-color: white;
+    height: 500px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 2px 1px 4px black, -2px -1px 4px black;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.heading{
+    padding: 10px 0px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5rem;
+}
+input{
+    width: 80%;
+    padding: 7px 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#addButton{
+    border: none;
+    height: 30px;
+    width: 15%;
+    background-color:orangered;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+#addButton:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+.listStyle{
+    width: 95%;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+    text-align: left;
+    padding: 0.8rem;
+    margin: 0.7rem;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.listStyle:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px black, -2px -2px 3px black;
+}
+#deleteButton{
+    color: red;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+#deleteButton:hover{
+  transform: scale(1.1);
+   transition: all 0.6s;
+}
+.bg-success{
+    padding: 0.6rem;
+    margin: 0.5rem;
+    text-align: left;
+    background-color: azure;
+    border-left: 6px solid rgb(20, 117, 20);
+}
+.bg-danger{
+    padding: 0.6rem;
+    margin: 0.5rem;
+    text-align: left;
+    background-color: azure;
+    border-left: 6px solid rgb(199, 2, 2);
+}

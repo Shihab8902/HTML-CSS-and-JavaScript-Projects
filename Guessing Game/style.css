@@ -1,0 +1,101 @@
+/* reset code */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    font-family: 'East Sea Dokdo', cursive;
+    background-color: #E5B8F4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main styles */
+.card-body{
+    background-color: #3F0071;
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px white;
+}
+.heading{
+    text-align: center;
+    color: #FBFACD;
+    font-size: 3rem;
+    animation-name: heading-anim;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes heading-anim {
+    30%{
+        color: rgb(255, 7, 7);
+    }
+    60%{
+        color: rgb(15, 211, 15);
+    }
+    100%{
+        color: rgb(31, 31, 244);
+    }
+}
+.slogan{
+    color: #31E1F7;
+    font-size: 30px;
+    text-align: center;
+}
+.input-field{
+   padding: 10px;
+}
+label{
+    font-size: 2.4rem;
+    color: #E80F88;
+    text-shadow: 0.5px 0.5px 1px black;
+}
+input{
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 80px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #B08BBB;
+}
+.submit-button{
+    display: flex;
+    justify-content: end;
+}
+.submit-btn{
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 52px;
+    background-color: #0558fd;
+    color: white;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.result-board{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.remainingAttempts{
+    color: #33f915;
+}
+.wonMessage{
+    color: #33f915;
+}
+.loseMessage{
+    color: red;
+}
+.winLoseCounter span{
+    margin:  15px 10px;
+    
+}
